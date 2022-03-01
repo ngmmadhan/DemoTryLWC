@@ -1,12 +1,11 @@
 <html>
   <script src="https://venerateforce-developer-edition.na139.force.com/lightning/lightning.out.js"></script>
   
-  <div style="width:30%;height:100px;" id="FlipcardContainer" />
+  <div style="width:30%;height:100px;" id="LWCContainer" />
 
    <script>
      $Lightning.use("c:BookAppointmentAuraAPP", function() {
-     $Lightning.createComponent("c:FlipCard",,
-     "kM_BookAppointMentContainer",
+     $Lightning.createComponent("c:kM_BookAppointMentContainer",
      function(cmp) {
      console.log('Component created, do something cool here');
      });
