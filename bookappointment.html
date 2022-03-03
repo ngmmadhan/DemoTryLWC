@@ -1,17 +1,18 @@
 <html>
-  <script src="https://venerateforce-developer-edition.na139.force.com/lightning/lightning.out.js"></script>
+  <script src="https://venerateforce-dev-ed.my.salesforce.com/lightning/lightning.out.js"></script>
   
   <div style="width:30%;height:100px;" id="lwcLightning" />
 
    <script>
-     $Lightning.use("c:BookAppointmentAuraAPP", function() {
-               $Lightning.createComponent(
-            "c:kM_BookAppointMentContainer",
-            { msg : "It works (LWC)!" },
-            "lwcLightning",
-            function(cmp) {
-                console.log("LWC component was created");
-            }
+     $Lightning.use("c:BookAppointmentAuraAPP",
+                     function() {
+                        $Lightning.createComponent(
+                            "c:kM_BookAppointMentContainer",
+                             { msg : "It works (LWC)!" },
+                            "lwcLightning",
+                     function(cmp) {
+                        console.log("LWC component was created");
+                    }
         );
      });
    </script>
