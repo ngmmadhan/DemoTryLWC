@@ -1,3 +1,19 @@
-<aura:application access="GLOBAL" extends="ltng:outApp">
-    <aura:dependency resource="c:lwcCmp"/>
-</aura:application>
+<html>
+  <script src="https://venerateforce-dev-ed.my.salesforce.com/lightning/lightning.out.js"></script>
+  
+  <div style="width:30%;height:100px;" id="lwcLightning" />
+
+   <script>
+     $Lightning.use("c:AuraAPP",
+                     function() {
+                        $Lightning.createComponent(
+                            "c:lwcCmp",
+                             { msg : "It works (LWC)!" },
+                            "lwcLightning",
+                     function(cmp) {
+                        console.log("LWC component was created");
+                    }
+        );
+     });
+   </script>
+</html>
